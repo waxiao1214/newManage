@@ -1,5 +1,14 @@
-<header>
-    <a href="{% url 'home' %}">Home</a> | <a href="{% url 'about' %}">About</a>
-</header>
-    {% block content %}
-    {% endblock %}
+<html>
+    <head>
+        <title>Django blog</title>
+    </head>
+        <header>
+            <a href="#">Home</a> | <a href="{% url 'about' %}">About</a> | <a href="{% url 'blog' %}">blog</a> | <a href="{% url 'post' %}">Post</a> 
+        </header>
+
+        {% block content %}
+        
+        {% endblock %}
+
+</html>
+
