@@ -1,11 +1,14 @@
+{% load static %}
 <html>
     <head>
         <title>Django blog</title>
+        <link rel = 'stylesheet' href = "{% static 'css/base.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="\stylesheet">
     </head>
         <header>
             <a href="#">Home</a> | <a href="{% url 'about' %}">About</a> | <a href="{% url 'blog' %}">blog</a> | <a href="{% url 'post' %}">Post</a> 
         </header>
-
+        <h1>Hello</h1>
         {% block content %}
         
         {% endblock %}
